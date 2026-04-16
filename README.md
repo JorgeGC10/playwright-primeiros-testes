@@ -4,7 +4,7 @@ Este repositório contém meus primeiros testes automatizados com **Playwright**
 
 ### Sobre o Projeto
 - Estou começando agora em automação de testes
-- Todos os testes foram criados durante o curso da Gupy/QAx
+- Todos os testes foram criados durante o curso da Udemy/QAx
 - Foco em testes E2E (interface) e limpeza via API
 
 ### Tecnologias utilizadas
