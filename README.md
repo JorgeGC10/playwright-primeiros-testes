@@ -1,21 +1,19 @@
-# Meus Primeiros Testes com Playwright
+# Automação de Testes com Playwright
 
-Este repositório contém meus primeiros testes automatizados com **Playwright**, feitos enquanto estudo automação de testes.
+Projeto desenvolvido para prática de testes automatizados E2E.
 
-### Sobre o Projeto
-- Estou começando agora em automação de testes
-- Todos os testes foram criados durante o curso da Udemy/QAx
-- Foco em testes E2E (interface) e limpeza via API
+## Cenários testados
+- Criação de tarefa
+- Validação de tarefa duplicada
+- Campo obrigatório
 
-### Tecnologias utilizadas
+## Tecnologias
 - Playwright
-- JavaScript / TypeScript
-- Node.js
+- TypeScript
 
-### Testes criados até agora
-- ✅ Criar uma nova tarefa
-
-*(Vou adicionando mais testes conforme avanço no curso)*
+## Como executar
+npm install
+npx playwright test
 
 ---
 
