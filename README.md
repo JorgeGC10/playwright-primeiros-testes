@@ -15,6 +15,11 @@ Projeto desenvolvido para prática de testes automatizados E2E.
 npm install
 npx playwright test
 
+## Sobre o projeto
+
+Este projeto foi desenvolvido durante meus estudos em automação de testes,
+onde apliquei conceitos como Page Object Model e validação de cenários reais.
+
 ---
 
 **Feito por Jorge Gois**  
