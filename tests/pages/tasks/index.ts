@@ -1,0 +1,37 @@
+import { Page, Locator, expect } from '@playwright/test'
+import { TaskModel } from '../../fixtures/task.model'
+
+
+export class TaskPage {
+    readonly page: Page
+    readonly inputTaskName: Locator
+
+    constructor(page: Page) {
+        this.page = page
+        this.inputTaskName = this.page.locator('input[class*=InputNewTask]')
+    }
+
+    async go() {
+        await this.page.goto('http://localhost:8080')
+    }
+
+    async create(task: TaskModel) {
+        await this.inputTaskName.fill(task.name)
+        await this.page.click('css=button >> text=Create')
+
+    }
+
+    async shouldHaveText(taskName: string) {
+        const target = this.page.locator(`css=.task-item p >> text=${taskName}`)
+        await expect(target).toBeVisible()
+
+    }
+    
+    async alertHaveText(text: string) {
+     const target = this.page.locator('.swal2-html-container')
+    await expect(target).toHaveText(text)
+    }
+
+    async getValidationMessage(): Promise<string> {
+        return await this.inputTaskName.evaluate(e => (e as HTMLInputElement).validationMessage)
+    }

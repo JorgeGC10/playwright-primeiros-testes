@@ -1,0 +1,29 @@
+{
+  "sucess": {
+        "name": "Ler um livro de TypeScript",
+        "is_done": false
+
+  },
+
+  "duplicate": {
+        "name": "tarefa duplicada",
+        "is_done": false
+
+  },
+
+  "required": {
+      "name": "",
+      "is_done": false
+
+
+  },
+  
+    "update": {
+
+      "name": "pagar a fatura do cartao de credito",
+      "is_done": false                                                        
+    }
+
+
+
+}
